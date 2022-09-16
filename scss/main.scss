@@ -1,10 +1,132 @@
+// Google font ,Import from google font
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lobster&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@200;300;400;500;600&family=Roboto&display=swap');
+
+// Font Family Import From Node-Modules
+
+
+//font awesome links
+
+$font-family-sans-serif: 'Poppins', sans-serif;
+
+// Bootstrap import from node-modules
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-    background-color: black;
-    
-
-    h1 {
-        color: white;
-    }
+    background-color: white;
+    width: 100vw;
+    min-height: 100vh;
 }
+
+.li-bar {
+    width: 1px;
+    height: 1rem;
+    background-color: #9b9c9b;
+}
+
+.nav-icon {
+    font-size: 1.3rem;
+    color: #555252;
+}
+
+
+.custom-dropdown {
+    position: relative;
+}
+
+.custom-dropdown ul {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    min-height: 100px;
+    z-index: 100;
+    box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+}
+
+
+.custom-dropdown:hover ul {
+    display: block;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+
+// Main Menu Start
+
+
+.mega-menu-item {
+    position: relative;
+}
+
+.mega-menu-container {
+    display: none;
+    position: absolute;
+    min-width: 800px;
+    min-height: 500px;
+    background-color: #fff;
+    border-radius: 0.15rem;
+    line-height: 2px;
+    box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+    margin-top: 0.5rem;
+}
+
+.mega-menu-item:hover .mega-menu-container, ul {
+    display: block;
+}
+
+
+// Pages Dropdown Menu Start
+
+.page-dropdown-item {
+    position: relative;
+}
+
+.pages-dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 215px;
+    min-height: 350px;
+    background-color: #fff;
+    border-radius: 0.15rem;
+    line-height: 2px;
+    box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+    margin-top: 0.5rem;
+}
+
+.page-dropdown-item:hover .pages-dropdown-menu {
+    display: block;
+}
+
+
+   
+// Blog Dropdown Menu Start
+
+.blog-dropdown-item {
+    position: relative;
+}
+
+.blog-dropdown-container {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 215px;
+    min-height: 185px;
+    border-radius: 0.15rem;
+    line-height: 2px;
+    box-shadow: 0 1px 7px -2px rgb(0 0 0 / 30%);
+    margin-top: 0.5rem;
+}
+
+
+.blog-dropdown-item:hover .blog-dropdown-container {
+    display: block;
+}
+
+
+
+
